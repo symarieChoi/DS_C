@@ -66,7 +66,7 @@ element peek(StackType *s)
 
 int main(void)
 {
-    StackType s; // 스택 정적으로 생성하기기
+    StackType s; // 스택 정적으로 생성하기
 
     init_stack(&s);
     push(&s, 1); // 함수 호출 시 스택의 주소 전달
