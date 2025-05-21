@@ -66,7 +66,7 @@ element peek(StackType *s)
 
 int main(void)
 {
-    StackType *s; // 스택 정적으로 생성하기
+    StackType *s;
     s = (StackType *)malloc(sizeof(StackType));
 
     init_stack(s);
