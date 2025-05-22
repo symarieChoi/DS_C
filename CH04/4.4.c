@@ -66,7 +66,7 @@ element peek(StackType *s)
 
 int main(void)
 {
-    StackType *s; // 포인터만 선언한 것이므로 실제 메모리 공간을 할당하기 위해
+    StackType *s;                               // 포인터만 선언한 것이므로 실제 메모리 공간을 할당하기 위해
     s = (StackType *)malloc(sizeof(StackType)); // 동적 할당
 
     init_stack(s);
