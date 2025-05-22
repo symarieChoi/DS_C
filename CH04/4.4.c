@@ -66,8 +66,8 @@ element peek(StackType *s)
 
 int main(void)
 {
-    StackType *s;
-    s = (StackType *)malloc(sizeof(StackType));
+    StackType *s; // 포인터만 선언한 것이므로 실제 메모리 공간을 할당하기 위해
+    s = (StackType *)malloc(sizeof(StackType)); // 동적 할당
 
     init_stack(s);
     push(s, 1); // 함수 호출 시 스택의 주소 전달
