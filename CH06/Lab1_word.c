@@ -40,19 +40,13 @@ void print_list(ListNode *head)
 int main(void)
 {
     ListNode *head = NULL;
-    element item;
+    element item[3] = {{"APPLE"}, {"KIWI"}, {"BANANA"}};
 
-    strcpy(item.name, "APPLE");
-    head = insert_first(head, item);
-    print_list(head);
-
-    strcpy(item.name, "KIWI");
-    head = insert_first(head, item);
-    print_list(head);
-
-    strcpy(item.name, "BANANA");
-    head = insert_first(head, item);
-    print_list(head);
+    for (int i = 0; i < 3; i++)
+    {
+        head = insert_first(head, item[i]);
+        print_list(head);
+    }
 
     return 0;
 }
