@@ -62,7 +62,6 @@ element dequeue(LinkedQueueType *q)
         {
             q->rear = NULL;
         }
-        int data = temp->data;
         free(temp);
         return data;
     }
